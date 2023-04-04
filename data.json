@@ -1,0 +1,323 @@
+[
+  {
+    "groupName": "Trabajo, we notio",
+    "tasks": [
+      {
+        "id": "1wenotio",
+        "name": "Registrar 1 hora de trabajo",
+        "duration": 90,
+        "divisible": false,
+        "repetitions": 14,
+        "priority": 10,
+        "date": ""
+      },
+      {
+        "id": "2wenotio",
+        "name": "Registrar 20 minutos de trabajo",
+        "duration": 20,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 5
+      }
+    ]
+  },
+  {
+    "groupName": "Universidad",
+    "tasks": [
+      {
+        "id": "1universidad",
+        "name": "Semana 1 de logística y distribución internacional, hacer examenes y puntos extra",
+        "duration": 60,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 7
+      },
+      {
+        "id": "3universidad",
+        "name": "Semana 3 de logística y distribución internacional, hacer examenes y puntos extra",
+        "duration": 210,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      },
+      {
+        "id": "4universidad",
+        "name": "Semana 4 de logística y distribución internacional, hacer examenes y puntos extra",
+        "duration": 210,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      },
+      {
+        "id": "5universidad",
+        "name": "Semana 1 de Financiamiento de las operaciones de comercio exterior, hacer examenes y puntos extra",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 7
+      },
+      {
+        "id": "7universidad",
+        "name": "Semana 3 de Financiamiento de las operaciones de comercio exterior, hacer examenes y puntos extra",
+        "duration": 210,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      },
+      {
+        "id": "8universidad",
+        "name": "Semana 4 de Financiamiento de las operaciones de comercio exterior, hacer examenes y puntos extra",
+        "duration": 210,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      },
+      {
+        "id": "10universidad",
+        "name": "Semana 3 de Introducción a las matemáticas, hacer examenes y puntos extra",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      },
+      {
+        "id": "11universidad",
+        "name": "Semana 4 de Introducción a las matemáticas, hacer examenes y puntos extra",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 6
+      }
+    ]
+  },
+  {
+    "groupName": "Tareas de leddeo",
+    "tasks": [
+      {
+        "id": "3aoiuddjf",
+        "name": "El tamaño de los subtítulos al descargar el vídeo no concuerda con lo que muestra el editor",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 3
+      },
+      {
+        "id": "4ssdfdsf",
+        "name": "Mejorar editor de subtitulos.",
+        "duration": 600,
+        "divisible": true,
+        "repetitions": 1,
+        "priority": 2
+      },
+      {
+        "id": "5sdjpasdj",
+        "name": "Añadir cambiar de contraseña.",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 2
+      },
+      {
+        "id": "6sidsdf",
+        "name": "Añadir pregunta y funcionalidad ¿Olvidaste contraseña ?",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 2
+      },
+      {
+        "id": "7238eifhd",
+        "name": "Mejorar lógica de verificación de correo",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 2
+      },
+      {
+        "id": "8238eifhd",
+        "name": "Añadir anuncios",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "9238eifhd",
+        "name": "Agregar un Ctrl Z",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "10238eifhd",
+        "name": "Traductor de texto",
+        "duration": 180,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "65lsifisoidf",
+        "name": "Cortar el fondo de una foto",
+        "duration": 180,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "12238eifhd",
+        "name": "Aplicar estilos",
+        "duration": 480,
+        "divisible": true,
+        "repetitions": 1,
+        "priority": 1
+      }
+    ]
+  },
+  {
+    "groupName": "Saas Bimensual",
+    "tasks": [
+      {
+        "id": "3saas",
+        "name": "Crear un startup boilerplate",
+        "duration": 1200,
+        "divisible": true,
+        "repetitions": 1,
+        "priority": 3
+      }
+    ]
+  },
+  {
+    "groupName": "Profecional",
+    "tasks": []
+  },
+  {
+    "groupName": "Estudios",
+    "tasks": [
+      {
+        "id": "leer",
+        "name": "Leer 4 páginas en 15 miutos de alguno de los 3 libros",
+        "duration": 15,
+        "divisible": false,
+        "repetitions": 257,
+        "priority": 8
+      },
+      {
+        "id": "videosyt",
+        "name": "Ver y estudiar uno de los videos de OS",
+        "duration": 15,
+        "divisible": false,
+        "repetitions": 19,
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "groupName": "Personal",
+    "tasks": [
+      {
+        "id": "6contador",
+        "name": "Pagar impuestos y sacar dinero",
+        "duration": 180,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 3,
+        "requiredDay": "Lunes 20"
+      }
+    ]
+  },
+  {
+    "groupName": "Micro SaaS, Tasks manager",
+    "tasks": [
+      {
+        "id": "1microsaas",
+        "name": "Completar edición y eliminación de grupos de tareas",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "2microsaas",
+        "name": "Modal y funcionalidad para agregar tareas",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "3microsaas",
+        "name": "Mostrar tareas y agregar eliminar",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "4microsaas",
+        "name": "Edición de tareas",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "5microsaas",
+        "name": "Modal y funcionalidad para agregar días disponibles",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "6microsaas",
+        "name": "Mostrar dias disponibles y funcionalidad para eliminarlos",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "7microsaas",
+        "name": "Poder editar los días disponibles",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "8microsaas",
+        "name": "Mostrar las tareas asignadas según el día escogido siendo el día actual por defecto",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "9microsaas",
+        "name": "funcionalidad para marcar tareas como completadas",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "10microsaas",
+        "name": "Asegurarme de que la lista de tareas se actualice de forma dinamica",
+        "duration": 30,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      },
+      {
+        "id": "11microsaas",
+        "name": "Mejoras en el algoritmo y la plataforma en general",
+        "duration": 120,
+        "divisible": false,
+        "repetitions": 1,
+        "priority": 1
+      }
+    ]
+  }
+]
