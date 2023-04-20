@@ -1,5 +1,12 @@
 const chalk = require("chalk");
 
+function formatTask(task) {
+  return chalk.bold(
+    `\n${task.taskName} | Duration: ${task.duration} minutes | Priority: ${task.priority} | Repetitions Left: ${task.repetitions}` +
+      (task.requiredDay ? ` | Date: ${task.requiredDay}` : "")
+  );
+}
+
 function displayResults(result) {
   console.log("\nAssigned tasks:");
   for (const [day, tasks] of Object.entries(result.assignedTasks)) {
@@ -45,7 +52,8 @@ function displayTasks(tasks, groups) {
     group.tasks.forEach((task) => {
       console.log(
         chalk.underline(
-          `  ${task.taskName} | Duration: ${task.duration} minutes | Priority: ${task.priority} | Repetitions: ${task.repetitions}`
+          `  ${task.taskName} | Duration: ${task.duration} minutes | Priority: ${task.priority} | Repetitions: ${task.repetitions}` +
+            (task.requiredDay ? ` | Date: ${task.requiredDay}` : "")
         )
       );
     });
@@ -71,4 +79,5 @@ module.exports = {
   displayTasks,
   displayDays,
   displayGroups,
+  formatTask,
 };

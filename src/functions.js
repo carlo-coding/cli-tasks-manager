@@ -1,19 +1,41 @@
-/* 
+/*
 Cambios al algoritmo:
-1. Encontrar bugs y resolverlos
-2. Añadir fechas y horas fijas opcionales a las tareas
-3. Separar grupos de tareas
-4. En base a las tareas asignadas y restricciones personalizadas
-Distribuir las tareas en un horario.
-5. Agregar algo así como un pomodoro para llevar un seguimiento
-de la tarea actual.
-6. Mostrar en la aplicación estádisticas y 
-cuales son las tareas que no se podrán terminar.
-Agregar máximo de repeticiones.
+Agregar un menu de completar tareas del día actual
 Agregar funcionalidad de prioridad por grupos
+Hacer que las ediciones y eliminaciones afecten a relaciones de entidades
+Cambiar el mecanismo para agregar fechas eliguiendo primero año, mes y dia o que se agreguen de forma automatica
+Hacer que los días tengan una fecha más concreta y que las tareas guarden relación con su id
+Opción para agregar tareas que se repiten periodicamente y eliminarlas todas
+Mostrar estádisticas sobre el porcentaje de tiempo que le dedico a cada grupo
+Opción para eliminar tareas que hagan match con un patron
+
+Administración de gastos:
+Se deberá hacer un menu de más alto nivel para separar categorías.
+Será un menu interactivo que preguntará por gatos, ingresos entre otras cosas.
+Al obtener estos datos debe almacenarlo en una base de datos y actualizar la hoja de calculo.
+Debe haber la opción para revisar estadisticas lo que mostrará un chart con los datos.
+Debe haber la opción de editar los datos.
+
+Gestion de productividad.
+Obtener información sobre que actividades es más probable que termine basado en datos anteriores.
+Obtener una lista de sistios web visitados en cada hora del día y obtener un sinsight sobre que es lo que intentaba hacer.
+Generar un insight sobre si las tareas que estoy realizando estan relacionadas con mis metas.
+Obtener recomendaciones diarias.
+Almacenar un resumen de los objetivos alcanzados y no alcanzados semana con semana.
+
+Generación de agenda.
+En base a los objetivos que tenga y mediante la introducción de información extra 
+se debe poder generar un horario flexible que cubra mis necesidades y se debe agendar en
+mi google calendar y en mis todos de google.
+
+
+BUGS:
 No esta distrubuyendo todas las tareas pero tampoco las añade a tareas incompletas.
 */
 const uuidv4 = () => Math.random().toString(16).slice(2);
+
+const deepCopy = (obj) => JSON.parse(JSON.stringify(obj));
+
 function removeRepetition(tasks, taskId) {
   return tasks.map((group) => ({
     ...group,
@@ -50,7 +72,16 @@ function canAddMoreTasks(tasks, remainingTime) {
 }
 
 function assignTasks(days, tasks) {
-  let groupTasks = JSON.parse(JSON.stringify(tasks));
+  let groupTasks = deepCopy(tasks);
+
+  /* --- Arreglo temporal --- */
+  const workGroup = deepCopy(
+    groupTasks.find((group) => group.groupName === "Work")
+  );
+  groupTasks = groupTasks.filter((group) => group.groupName !== "Work");
+  groupTasks = [workGroup, ...groupTasks];
+  /* ------ */
+
   const assignedTasks = {};
   const requiredTasks = {};
   for (let day of days) {
@@ -60,7 +91,6 @@ function assignTasks(days, tasks) {
     for (const group of tasks) {
       for (const task of group.tasks) {
         if (task.requiredDay) {
-          console.log(task.requiredDay, task.taskName);
           requiredTasks[task.requiredDay].push({
             ...task,
             groupName: group.groupName,
